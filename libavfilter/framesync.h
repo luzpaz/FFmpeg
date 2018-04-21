@@ -41,7 +41,7 @@ enum EOFAction {
  * complex logic and a few user-tunable options.
  *
  * In this API, when a set of synchronized input frames is ready to be
- * procesed is called a frame event. Frame event can be generated in
+ * processed is called a frame event. Frame event can be generated in
  * response to input frames on any or all inputs and the handling of
  * situations where some stream extend beyond the beginning or the end of
  * others can be configured.

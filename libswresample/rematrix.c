@@ -102,9 +102,9 @@ static int clean_layout(void *s, int64_t layout){
 static int sane_layout(int64_t layout){
     if(!(layout & AV_CH_LAYOUT_SURROUND)) // at least 1 front speaker
         return 0;
-    if(!even(layout & (AV_CH_FRONT_LEFT | AV_CH_FRONT_RIGHT))) // no asymetric front
+    if(!even(layout & (AV_CH_FRONT_LEFT | AV_CH_FRONT_RIGHT))) // no asymmetric front
         return 0;
-    if(!even(layout & (AV_CH_SIDE_LEFT | AV_CH_SIDE_RIGHT)))   // no asymetric side
+    if(!even(layout & (AV_CH_SIDE_LEFT | AV_CH_SIDE_RIGHT)))   // no asymmetric side
         return 0;
     if(!even(layout & (AV_CH_BACK_LEFT | AV_CH_BACK_RIGHT)))
         return 0;

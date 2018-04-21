@@ -162,7 +162,7 @@ typedef struct VariantStream {
 typedef struct ClosedCaptionsStream {
     char *ccgroup; /* closed caption group name */
     char *instreamid; /* closed captions INSTREAM-ID */
-    char *language; /* closed captions langauge */
+    char *language; /* closed captions language */
 } ClosedCaptionsStream;
 
 typedef struct HLSContext {

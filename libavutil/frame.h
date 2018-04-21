@@ -569,7 +569,7 @@ typedef struct AVFrame {
     /**
      * @anchor cropping
      * @name Cropping
-     * Video frames only. The number of pixels to discard from the the
+     * Video frames only. The number of pixels to discard from the
      * top/bottom/left/right border of the frame to obtain the sub-rectangle of
      * the frame intended for presentation.
      * @{

@@ -456,7 +456,7 @@ static const int16_t quantization_factors[32] = {
 };
 
 
-/* Rounded right shift with optionnal clipping */
+/* Rounded right shift with optional clipping */
 #define RSHIFT_SIZE(size)                                                     \
 av_always_inline                                                              \
 static int##size##_t rshift##size(int##size##_t value, int shift)             \

@@ -436,7 +436,7 @@ static int rkmpp_retrieve_frame(AVCodecContext *avctx, AVFrame *frame)
             layer->planes[1].offset = layer->planes[0].pitch * mpp_frame_get_ver_stride(mppframe);
             layer->planes[1].pitch = layer->planes[0].pitch;
 
-            // we also allocate a struct in buf[0] that will allow to hold additionnal information
+            // we also allocate a struct in buf[0] that will allow to hold additional information
             // for releasing properly MPP frames and decoder
             framecontextref = av_buffer_allocz(sizeof(*framecontext));
             if (!framecontextref) {

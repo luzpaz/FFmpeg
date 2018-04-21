@@ -1136,7 +1136,7 @@ used for all remaining channels.
 
 @itemize
 @item
-Apply 2 pole elliptic notch at arround 5000Hz for 48000 Hz sample rate:
+Apply 2 pole elliptic notch at around 5000Hz for 48000 Hz sample rate:
 @example
 aiir=k=1:z=7.957584807809675810E-1 -2.575128568908332300 3.674839853930788710 -2.57512875289799137 7.957586296317130880E-1:p=1 -2.86950072432325953 3.63022088054647218 -2.28075678147272232 6.361362326477423500E-1:f=tf:r=d
 @end example
@@ -17570,7 +17570,7 @@ Set outer coloring mode.
 It shall assume one of following values:
 @table @option
 @item iteration_count
-Set iteration cound mode.
+Set iteration count mode.
 @item normalized_iteration_count
 set normalized iteration count mode.
 @end table

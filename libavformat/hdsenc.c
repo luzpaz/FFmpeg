@@ -252,7 +252,7 @@ static int write_abst(AVFormatContext *s, OutputStream *os, int final)
     avio_wb32(out, 1000); // timescale
     avio_wb64(out, cur_media_time);
     avio_wb64(out, 0); // SmpteTimeCodeOffset
-    avio_w8(out, 0); // MovieIdentifer (null string)
+    avio_w8(out, 0); // MovieIdentifier (null string)
     avio_w8(out, 0); // ServerEntryCount
     avio_w8(out, 0); // QualityEntryCount
     avio_w8(out, 0); // DrmData (null string)

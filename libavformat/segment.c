@@ -98,11 +98,11 @@ typedef struct SegmentContext {
 
     char *times_str;       ///< segment times specification string
     int64_t *times;        ///< list of segment interval specification
-    int nb_times;          ///< number of elments in the times array
+    int nb_times;          ///< number of elements in the times array
 
     char *frames_str;      ///< segment frame numbers specification string
     int *frames;           ///< list of frame number specification
-    int nb_frames;         ///< number of elments in the frames array
+    int nb_frames;         ///< number of elements in the frames array
     int frame_count;       ///< total number of reference frames
     int segment_frame_count; ///< number of reference frames in the segment
 

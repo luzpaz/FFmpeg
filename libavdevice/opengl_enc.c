@@ -278,7 +278,7 @@ static const struct OpenGLFormatDesc {
 };
 
 static av_cold int opengl_prepare_vertex(AVFormatContext *s);
-static int opengl_draw(AVFormatContext *h, void *intput, int repaint, int is_pkt);
+static int opengl_draw(AVFormatContext *h, void *input, int repaint, int is_pkt);
 static av_cold int opengl_init_context(OpenGLContext *opengl);
 
 static av_cold void opengl_deinit_context(OpenGLContext *opengl)

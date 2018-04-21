@@ -268,7 +268,7 @@ void avpriv_request_sample(void *avc,
 #   define ff_dlog(ctx, ...) do { if (0) av_log(ctx, AV_LOG_DEBUG, __VA_ARGS__); } while (0)
 #endif
 
-// For debuging we use signed operations so overflows can be detected (by ubsan)
+// For debugging we use signed operations so overflows can be detected (by ubsan)
 // For production we use unsigned so there are no undefined operations
 #ifdef CHECKED
 #define SUINT   int

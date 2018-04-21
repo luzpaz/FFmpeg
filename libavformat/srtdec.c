@@ -196,7 +196,7 @@ static int srt_read_header(AVFormatContext *s)
     }
 
     /* Append the last event. Here we force the cache to be flushed, because a
-     * trailing number is more likely to be geniune (for example a copyright
+     * trailing number is more likely to be genuine (for example a copyright
      * date) and not the event index of an inexistant event */
     if (has_event_info) {
         res = add_event(&srt->q, &buf, line_cache, &ei, 1);

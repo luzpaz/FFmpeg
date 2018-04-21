@@ -503,7 +503,7 @@ static int load_font_fontconfig(AVFilterContext *ctx)
     FcDefaultSubstitute(pat);
 
     if (!FcConfigSubstitute(fontconfig, pat, FcMatchPattern)) {
-        av_log(ctx, AV_LOG_ERROR, "could not substitue fontconfig options"); /* very unlikely */
+        av_log(ctx, AV_LOG_ERROR, "could not substitute fontconfig options"); /* very unlikely */
         FcPatternDestroy(pat);
         return AVERROR(ENOMEM);
     }
@@ -749,7 +749,7 @@ static av_cold int init(AVFilterContext *ctx)
 
     if (s->borderw) {
         if (FT_Stroker_New(s->library, &s->stroker)) {
-            av_log(ctx, AV_LOG_ERROR, "Coult not init FT stroker\n");
+            av_log(ctx, AV_LOG_ERROR, "Could not init FT stroker\n");
             return AVERROR_EXTERNAL;
         }
         FT_Stroker_Set(s->stroker, s->borderw << 6, FT_STROKER_LINECAP_ROUND,

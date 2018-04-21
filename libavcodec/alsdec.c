@@ -1508,7 +1508,7 @@ static int read_diff_float_data(ALSDecContext *ctx, unsigned int ra_frame) {
         if (highest_byte) {
             for (i = 0; i < frame_length; ++i) {
                 if (ctx->raw_samples[c][i] != 0) {
-                    //The following logic is taken from Tabel 14.45 and 14.46 from the ISO spec
+                    //The following logic is taken from Table 14.45 and 14.46 from the ISO spec
                     if (av_cmp_sf_ieee754(acf[c], FLOAT_1)) {
                         nbits[i] = 23 - av_log2(abs(ctx->raw_samples[c][i]));
                     } else {

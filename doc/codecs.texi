@@ -960,7 +960,7 @@ Discard all non-reference frames.
 Discard all bidirectional frames.
 
 @item nokey
-Discard all frames excepts keyframes.
+Discard all frames except keyframes.
 
 @item all
 Discard all frames.
@@ -1236,7 +1236,7 @@ instead of alpha. Default is 0.
 @item dump_separator @var{string} (@emph{input})
 Separator used to separate the fields printed on the command line about the
 Stream parameters.
-For example to separate the fields with newlines and indention:
+For example to separate the fields with newlines and indentation:
 @example
 ffprobe -dump_separator "
                           "  -i ~/videos/matrixbench_mpeg2.mpg

@@ -29,7 +29,7 @@
 /**
  * Initialize the Diffie-Hellmann context and generate the public key.
  *
- * @param h     an URLContext
+ * @param h     a URLContext
  * @param buf   handshake data (1536 bytes)
  * @return zero on success, negative value otherwise
  */
@@ -38,7 +38,7 @@ int ff_rtmpe_gen_pub_key(URLContext *h, uint8_t *buf);
 /**
  * Compute the shared secret key and initialize the RC4 encryption.
  *
- * @param h             an URLContext
+ * @param h             a URLContext
  * @param serverdata    server data (1536 bytes)
  * @param clientdata    client data (1536 bytes)
  * @param type          the position of the server digest

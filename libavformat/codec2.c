@@ -45,7 +45,7 @@ typedef struct {
 
 static int codec2_probe(AVProbeData *p)
 {
-    //must start wih C0 DE C2
+    //must start with C0 DE C2
     if (AV_RB24(p->buf) != AVPRIV_CODEC2_MAGIC) {
         return 0;
     }

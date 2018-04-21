@@ -64,7 +64,7 @@
  * condition is met (that the image function itself is continuous), even if the
  * second boundary condition (that the derivative of the image function is
  * continuous) is not met. A masking algorithm that does preserve the second
- * boundary coundition (perhaps something based on a highly-modified bi-cubic
+ * boundary condition (perhaps something based on a highly-modified bi-cubic
  * algorithm) should offer even better results on paper, but the noise in a
  * typical TV signal should make anything based on derivatives hopelessly noisy.
  */

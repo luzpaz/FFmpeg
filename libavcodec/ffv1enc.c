@@ -555,7 +555,7 @@ FF_DISABLE_DEPRECATION_WARNINGS
     else
 FF_ENABLE_DEPRECATION_WARNINGS
 #endif
-    if (s->ac == 1) // Compatbility with common command line usage
+    if (s->ac == 1) // Compatibility with common command line usage
         s->ac = AC_RANGE_CUSTOM_TAB;
     else if (s->ac == AC_RANGE_DEFAULT_TAB_FORCE)
         s->ac = AC_RANGE_DEFAULT_TAB;

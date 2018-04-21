@@ -157,7 +157,7 @@ static int crypto_open2(URLContext *h, const char *uri, int flags, AVDictionary 
         if (ret < 0)
             goto err;
 
-        // pass back information about the context we openned
+        // pass back information about the context we opened
         if (c->hd->is_streamed)
             h->is_streamed = c->hd->is_streamed;
     }

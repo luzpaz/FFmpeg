@@ -256,8 +256,8 @@ enum {
 
   AVS_CACHE_AUDIO=50, // Explicitly do cache audio, X byte cache.
   AVS_CACHE_AUDIO_NOTHING=51, // Explicitly do not cache audio.
-  AVS_CACHE_AUDIO_NONE=52, // Audio cache off (auto mode), X byte intial cache.
-  AVS_CACHE_AUDIO_AUTO=53, // Audio cache on (auto mode), X byte intial cache.
+  AVS_CACHE_AUDIO_NONE=52, // Audio cache off (auto mode), X byte initial cache.
+  AVS_CACHE_AUDIO_AUTO=53, // Audio cache on (auto mode), X byte initial cache.
 
   AVS_CACHE_GET_AUDIO_POLICY=70, // Get the current audio policy.
   AVS_CACHE_GET_AUDIO_SIZE=71, // Get the current audio cache size.
@@ -610,7 +610,7 @@ struct AVS_Value {
   } d;
 };
 
-// AVS_Value should be initilized with avs_void.
+// AVS_Value should be initialized with avs_void.
 // Should also set to avs_void after the value is released
 // with avs_copy_value.  Consider it the equalvent of setting
 // a pointer to NULL
@@ -722,7 +722,7 @@ struct AVS_FilterInfo
 
 // Create a new filter
 // fi is set to point to the AVS_FilterInfo so that you can
-//   modify it once it is initilized.
+//   modify it once it is initialized.
 // store_child should generally be set to true.  If it is not
 //    set than ALL methods (the function pointers) must be defined
 // If it is set than you do not need to worry about freeing the child

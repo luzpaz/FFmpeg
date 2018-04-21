@@ -3855,7 +3855,7 @@ done
 
 if disabled autodetect; then
 
-    # Unless iconv is explicitely disabled by the user, we still want to probe
+    # Unless iconv is explicitly disabled by the user, we still want to probe
     # for the iconv from the libc.
     disabled iconv || enable libc_iconv
 
@@ -4410,7 +4410,7 @@ probe_cc(){
         disable stripping
     elif $_cc -? 2>/dev/null | grep -q 'LLVM.*Linker'; then
         # lld can emulate multiple different linkers; in ms link.exe mode,
-        # the -? parameter gives the help output which contains an identifyable
+        # the -? parameter gives the help output which contains an identifiable
         # string, while it gives an error in other modes.
         _type=lld-link
         # The link.exe mode doesn't have a switch for getting the version,

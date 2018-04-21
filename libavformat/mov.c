@@ -2318,7 +2318,7 @@ FF_ENABLE_DEPRECATION_WARNINGS
                             return AVERROR(ENOMEM);
                         memcpy(reel_name, st->codecpar->extradata + 30, str_size);
                         reel_name[str_size] = 0; /* Add null terminator */
-                        /* don't add reel_name if emtpy string */
+                        /* don't add reel_name if empty string */
                         if (*reel_name == 0) {
                             av_free(reel_name);
                         } else {
@@ -3167,7 +3167,7 @@ static int find_prev_closest_index(AVStream *st,
 
         while (*index >= 0 && (*ctts_index) >= 0 && (*ctts_index) < ctts_count) {
             // Find a "key frame" with PTS <= timestamp_pts (So that we can decode B-frames correctly).
-            // No need to add dts_shift to the timestamp here becase timestamp_pts has already been
+            // No need to add dts_shift to the timestamp here because timestamp_pts has already been
             // compensated by dts_shift above.
             if ((e_old[*index].timestamp + ctts_data[*ctts_index].duration) <= timestamp_pts &&
                 (e_old[*index].flags & AVINDEX_KEYFRAME)) {
@@ -3659,7 +3659,7 @@ static void mov_fix_index(MOVContext *mov, AVStream *st)
         }
     }
     // If there are empty edits, then msc->min_corrected_pts might be positive
-    // intentionally. So we subtract the sum duration of emtpy edits here.
+    // intentionally. So we subtract the sum duration of empty edits here.
     msc->min_corrected_pts -= empty_edits_sum_duration;
 
     // If the minimum pts turns out to be greater than zero after fixing the index, then we subtract the
@@ -5183,7 +5183,7 @@ static int mov_read_vpcc(MOVContext *c, AVIOContext *pb, MOVAtom atom)
     color_primaries = avio_r8(pb);
     color_trc       = avio_r8(pb);
     color_space     = avio_r8(pb);
-    if (avio_rb16(pb)) /* codecIntializationDataSize */
+    if (avio_rb16(pb)) /* codecInitializationDataSize */
         return AVERROR_INVALIDDATA;
 
     if (!av_color_primaries_name(color_primaries))

@@ -370,7 +370,7 @@ static void end_ebml_master_crc32(AVIOContext *pb, AVIOContext **dyn_cp, Matrosk
 }
 
 /**
-* Complete ebml master whithout destroying the buffer, allowing for later updates
+* Complete ebml master without destroying the buffer, allowing for later updates
 */
 static void end_ebml_master_crc32_preliminary(AVIOContext *pb, AVIOContext **dyn_cp, MatroskaMuxContext *mkv,
     ebml_master master)

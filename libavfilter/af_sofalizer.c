@@ -770,7 +770,7 @@ fail:
     av_freep(&data_hrtf_l); /* free temporary HRTF memory */
     av_freep(&data_hrtf_r);
 
-    av_freep(&data_ir_l); /* free temprary IR memory */
+    av_freep(&data_ir_l); /* free temporary IR memory */
     av_freep(&data_ir_r);
 
     av_freep(&fft_in_l); /* free temporary FFT memory */
